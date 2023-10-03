@@ -1,0 +1,886 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Quicksand:wght@400;600;700&family=Urbanist:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+:root {
+    --fontFirst: "Lexend", sans-serif;
+    --quickSandFont: 'Quicksand', sans-serif;
+    --poppinsFont: 'Poppins', sans-serif;
+}
+.navbar-brand{
+    height: 6rem;
+    overflow: hidden;
+}
+.main-navbar .navbar-brand img {
+    width: 5rem;
+    height: 5rem;
+    position: relative;
+    z-index: 111;
+    background-color: #000;
+    border-radius: 50%;
+}
+.main-navbar .navbar-brand .imageOverlaper {
+    background: #66FCF1;
+    height: 19rem;
+    width: 69rem;
+    position: absolute;
+    top: 0;
+    left: -25rem;
+    transform: rotate(45deg);
+    z-index: 99;
+}
+
+.main-navbar {
+    padding: 0;
+    overflow: hidden;
+}
+
+.sectionPadding {
+    padding: 2rem 0;
+}
+
+
+.sFeatureSection .podcard-show-item {
+    width: 23rem;
+    height: 13rem;
+    position: relative;
+    transition: all 0.5s ease 0s;
+}
+
+.sFeatureSection .image-icon img {
+    width: 4rem;
+    position: relative;
+    z-index: 10;
+    margin-top: 1rem;
+    transition: .5s all;
+}
+
+.sFeatureSection .image-icon .imgDark {
+    display: none;
+}
+
+.sFeatureSection .last-card h5 {
+    font-size: 3rem;
+}
+
+.sFeatureSection .last-card p {
+    font-size: 1.7rem;
+}
+
+
+.sFeatureSection .icon {
+    margin-right: 1rem;
+    width: 3rem;
+    height: 3rem;
+    position: relative;
+    z-index: 10;
+    transition: .5s all;
+}
+
+.sFeatureSection .icon i {
+    color: #000;
+    font-size: 1.5rem;
+    position: relative;
+    z-index: 10;
+    transition: .5s all;
+}
+
+.sFeatureSection .podcard-show-item p {
+    font-family: var(--fontFirst);
+    position: relative;
+    z-index: 10;
+    transition: .5s all;
+}
+
+.sFeatureSection .podcard-show-item {
+    transition: .5s all;
+    position: relative;
+    transition: .5s all;
+}
+
+.sFeatureSection .title h5 {
+    position: relative;
+    z-index: 10;
+    transition: .5s all;
+}
+
+.sFeatureSection .podcard-show-item .overlay {
+    background-color: #66FCF1;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    border-radius: 0.5rem;
+    z-index: 5;
+    transition: .5s all;
+    transform: scale(0);
+}
+
+.sFeatureSection .podcard-show-item:hover .overlay {
+    transform: scale(1);
+}
+
+.sFeatureSection .podcard-show-item:hover .icon {
+    background-color: #0b1834;
+}
+
+.sFeatureSection .podcard-show-item:hover .icon i {
+    color: #66FCF1;
+}
+
+.sFeatureSection .podcard-show-item:hover .imgLight {
+    display: none;
+}
+
+.sFeatureSection .podcard-show-item:hover .imgDark {
+    display: flex;
+}
+
+.sFeatureSection .podcard-show-item:hover .title h5 {
+    color: #0b1834;
+}
+
+.sFeatureSection .podcard-show-item:hover p {
+    color: #0b1834;
+}
+
+.sFeatureSection .podcard-show-item:hover .podcard-show-item {
+    border: 1px dashed #0b1834;
+}
+
+.accordion-item .accordion-body p a {
+    text-decoration: none;
+    color: #fff;
+    font-family: var(--fontFirst);
+    font-weight: 500;
+}
+
+.sFaqSection .section-title {
+    margin-bottom: 3rem;
+}
+
+
+.sFaqSection img {
+    height: 489px;
+    border-radius: 1rem;
+}
+
+.sContactSection .form-control {
+    height: 3rem;
+}
+
+.sContactSection .textarea {
+    min-height: 10rem !important;
+}
+
+.justifyText {
+    text-align: justify;
+}
+
+.section-title {
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+/* Common Classes */
+.sTitle {
+    font-family: var(--quickSandFont);
+    font-size: 2rem;
+    color: #66FCF1;
+}
+
+.sSubTitle {
+    font-family: var(--poppinsFont);
+    font-weight: 600;
+    font-size: 3rem;
+    color: #fff;
+}
+
+.sDescription {
+    font-family: var(--quickSandFont);
+    font-weight: 600;
+    font-size: 1.15rem;
+}
+
+.btn-main {
+    font-family: var(--poppinsFont);
+    border-radius: .5rem;
+    transition: .5s all;
+}
+
+.btn-main:active {
+    transform: scale(.9);
+}
+
+.btn-check:checked+.btn,
+.btn.active,
+.btn.show,
+.btn:first-child:active,
+:not(.btn-check)+.btn:active {
+    color: #000;
+}
+
+.sFeatureSection .sDescription {
+    line-height: 2;
+}
+
+.sContactSection .music-show-content {
+    padding: 0 8rem 0 0;
+}
+
+.sPlanSection .planCard {
+    padding: 2rem;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+    position: relative;
+}
+
+.sPlanSection .planCard .left {
+    position: relative;
+}
+
+.sPlanSection .planCard .share {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background-color: #66FCF1;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.3rem;
+    color: #000;
+    border-radius: 50%;
+    text-decoration: none;
+    transition: all 0.5s ease 0s;
+}
+
+.sPlanSection .planCard .share:hover {
+    transform: scale(1.1);
+}
+
+.sPlanSection .planCard .right {
+    background-color: #66FCF1;
+    position: relative;
+    overflow: hidden;
+}
+
+.sPlanSection .planCard .right .info-top {
+    padding: 1rem 2rem;
+    border-bottom: 5px solid #0b1834;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.sPlanSection .planCard .right .info-top h1 {
+    font-size: 2.2rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-family: var(--poppinsFont);
+}
+
+.sPlanSection .planCard .right .info-top h5 {
+    background-color: #fff;
+    color: #0b1834;
+    display: inline-block;
+    font-size: 1rem;
+    padding: .2rem .5rem;
+    border-radius: .5rem;
+    position: absolute;
+    top: 3.5rem;
+    left: 17rem;
+}
+
+.sPlanSection .planCard .right .info-top .brace {
+    background-color: #0b1834;
+    width: 5rem;
+    height: 5rem;
+    transform: rotate(45deg);
+    position: absolute;
+    top: 1rem;
+    right: 0rem;
+    left: 24rem;
+}
+
+.sPlanSection .planCard .right .info-middle ul {
+    padding: 1rem 2rem;
+}
+
+.sPlanSection .planCard .right .info-middle ul li {
+    margin-bottom: 1rem;
+}
+
+.sPlanSection .planCard .right .info-middle ul li span i {
+    background-color: #0b1834;
+    color: #fff;
+    font-size: .7rem;
+    padding: .3rem;
+    border-radius: 50%;
+}
+
+.sPlanSection .planCard .right .start-btn {
+    padding: 0 0 0 2rem;
+}
+
+.sPlanSection .planCard .right .start-btn a {
+    background-color: #0b1834;
+    color: #fff;
+    padding: .6rem 1rem;
+    font-family: var(--poppinsFont);
+    border-radius: .5rem;
+    font-size: 1rem;
+    letter-spacing: .05rem;
+    transition: .5s all;
+}
+
+.sPlanSection .planCard .right .start-btn a:hover {
+    transform: scale(1.1);
+}
+
+.slider-section {
+    padding: 1rem;
+    color: #0b1834;
+    background-color: #66FCF1;
+}
+
+.slider-section .sTitle {
+    color: #0b1834;
+}
+
+.slider-section .single-slide img {
+    width: 10rem !important;
+}
+
+.footer-section {
+    padding-top: 3rem;
+}
+
+.footer-section p {
+    font-size: 1.3rem;
+}
+
+.footer-section p a {
+    text-decoration: none;
+    color: #66FCF1;
+    margin-left: 1rem;
+}
+
+.footer-section .info {
+    margin-top: 2rem;
+}
+
+.footer-section .info .logo {
+    margin-bottom: 1rem;
+}
+
+.footer-section .info p {
+    font-size: 1rem;
+    text-align: justify;
+}
+
+.footer-section .info .location {
+    margin-top: 1rem;
+    flex-wrap: nowrap;
+}
+
+.footer-section .info .location img {
+    width: 1.4rem;
+    height: 1.4rem;
+    margin: .5rem;
+}
+
+.footer-section .info .location p {
+    font-size: .9rem;
+}
+
+.footer-section .links h5 {
+    margin-bottom: 1.2rem;
+}
+
+.footer-section .links ul li:not(:last-child) {
+    margin-bottom: .7rem;
+}
+
+.footer-section .column-one {
+    padding: 0 6rem 0 0;
+}
+
+.footer-section .links ul li a {
+    color: #fff;
+    font-size: 1.1rem;
+    font-family: var(--poppinsFont);
+    transition: .5s all;
+}
+
+.footer-section .links ul li a:hover {
+    color: #66FCF1;
+}
+
+.footer-section .map iframe {
+    width: 100%;
+    height: 15rem;
+}
+
+/* Page CSS */
+.sFeatureSection .section-top {
+    margin-bottom: 0;
+}
+
+.globalize-list ul li:not(:last-child) {
+    margin-bottom: .5rem;
+}
+
+.globalize-list ul li span i {
+    background-color: #66FCF1;
+    color: #0b1834;
+    font-size: .7rem;
+    padding: .3rem;
+    border-radius: 50%;
+    margin-right: 1rem;
+}
+
+.pricingImgBG img {
+    width: 28rem;
+    height: 30rem;
+    object-fit: cover;
+}
+
+.tncContent .highlight {
+    color: #66FCF1;
+}
+
+.sectionTwenty .sTitle {
+    text-transform: uppercase;
+}
+
+.sectionTwenty .sDescription {
+    margin-bottom: .5rem;
+}
+
+.sectionTwenty h5 {
+    font-size: 1.5rem;
+}
+.tncContent .textUpperCase{
+    text-transform: uppercase;
+}
+.sectionTwentyFour span{
+    font-weight: bold;
+    text-decoration: underline;
+}
+.sectionTwentyFive span{
+    color: #66FCF1;
+    font-weight: bold;
+}
+.tncContent .note span{
+    color: #66FCF1;
+    font-weight: bold;
+}
+.tncContent .noteDesc{
+    color: #66FCF1;
+    text-decoration: underline;
+}
+
+.subscribe-section{
+    padding: 2rem 0;
+}
+.subscribe-form {
+    margin-top:1rem;
+}
+.subscribe-form .form-control {
+    padding: 1rem;
+    height: auto;
+}
+
+.authForm{
+    padding: 2rem;
+    background-color: #0b1834;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.authForm .form-control {
+    height: auto;
+}
+/* Media Query */
+
+@media only screen and (max-width: 767px) {
+    .main-navbar .navbar-brand .imageOverlaper {
+        height: 6rem;
+        width: 6rem;
+        transform: rotate(90deg);
+        left: 0rem;
+    }
+
+    .navbar-collapse {
+        padding: 0 0 2rem 1rem;
+    }
+
+    .banner-section .banner-description {
+        text-align: center;
+    }
+
+    .slider-section .single-slide img {
+        width: 7rem !important;
+    }
+
+    .about-thumb-wrapper img {
+        height: 17rem;
+    }
+
+    .sTitle {
+        font-size: 1.4rem;
+    }
+
+    .sSubTitle {
+        font-size: 1.8rem;
+    }
+
+    .sDescription {
+        font-size: .93rem;
+    }
+
+    .about-content .btn {
+        margin-top: 1.5rem;
+        padding: 0.5rem 1rem;
+        font-size: .93rem;
+    }
+
+    .sFeatureSection .podcard-show-item {
+        text-align: center;
+    }
+
+    .sFeatureSection .podcard-show-item .icon-title {
+        justify-content: center;
+    }
+
+    .sFeatureSection .icon {
+        height: 2.5rem;
+        width: 2.5rem;
+    }
+
+    .sFeatureSection .icon i {
+        font-size: 1.1rem;
+    }
+
+    .sFeatureSection .podcard-show-item p {
+        font-size: 1rem;
+    }
+
+    .sFaqSection .faq-thumb {
+        margin-top: 1rem;
+    }
+
+    .accordion-item .accordion-header .accordion-button {
+        padding: 1rem;
+        font-size: .95rem;
+    }
+
+    .accordion-item .accordion-header .accordion-button:after {
+        font-size: .8rem;
+    }
+
+    .accordion-item p {
+        font-size: .95rem;
+    }
+
+    .sPlanSection .planCard .right .start-btn a {
+        padding: 0.5rem 1rem;
+        font-size: .93rem;
+    }
+
+    .sPlanSection .planCard .right .info-middle ul {
+        padding: 1rem;
+    }
+
+    .sPlanSection .planCard .right .start-btn {
+        padding: 0 0 1rem 1rem;
+    }
+
+    .sContactSection .music-show-content {
+        padding: 0;
+    }
+
+    .sContactSection .btn-main {
+        padding: 0.5rem 1rem;
+        font-size: .93rem;
+    }
+
+    .footer-section {
+        padding: 2rem 0 .5rem 0;
+    }
+
+    .footer-section p {
+        font-size: .9rem;
+        display: flex;
+    }
+
+    .footer-section p a {
+        margin-left: .5rem;
+    }
+
+    .footer-section .justify-content-end {
+        justify-content: start !important;
+    }
+
+    .footer-section .column-one {
+        padding: 0;
+    }
+
+    .footer-section .column-two,
+    .footer-section .column-three {
+        margin-top: 2rem;
+    }
+
+    .footer-section .links h5 {
+        margin-bottom: 1rem;
+    }
+
+    .footer-section .links ul li a {
+        font-size: 1rem;
+    }
+
+    .footer-section .map {
+        margin-top: 2rem;
+    }
+
+    .footer-section hr {
+        margin: 0.5rem;
+    }
+
+    /* CSS PAGES */
+    .pricingImgBG img {
+        width: 100%;
+        height: auto;
+    }
+    .authForm .form-control {
+        padding: 1rem;
+    }
+}
+
+@media only screen and (min-width: 767px) and (max-width: 992px) {
+    .main-navbar .navbar-brand .imageOverlaper {
+        height: 6rem;
+        width: 9rem;
+        transform: rotate(90deg);
+        left: 0rem;
+    }
+    
+    .navbar-collapse {
+        padding: 0 0 2rem 1rem;
+    }
+
+    .sFeatureSection .podcard-show-item {
+        width: auto;
+        height: 13rem;
+    }
+
+    .sFaqSection .faq-thumb {
+        margin-top: 1rem;
+        width: 100%;
+    }
+
+    .sFaqSection .faq-thumb img {
+        object-fit: cover;
+        width: 100%;
+    }
+
+    .sPlanSection .planCard .left {
+        align-items: center;
+        display: flex;
+    }
+
+    .sPlanSection .planCard .share {
+        left: 1rem;
+        top: 4rem;
+    }
+
+    .sPlanSection .planCard .right .info-middle ul {
+        padding: 1rem;
+    }
+
+    .sPlanSection .planCard .right .start-btn {
+        padding: 0 0 1rem 1rem;
+    }
+
+    .sPlanSection .planCard .right .info-top .brace {
+        left: 19rem;
+    }
+
+    .footer-section {
+        padding: 2rem 0 .5rem 0;
+    }
+
+    .footer-section p a {
+        margin-left: 0;
+    }
+
+    .footer-section .column-one {
+        padding: 0 5rem 0 0;
+    }
+
+    .footer-section .column-one,
+    .footer-section .column-two {
+        margin-bottom: 2rem;
+    }
+
+    .footer-section hr {
+        margin: 1rem 0;
+    }
+
+    /* CSS PAGES */
+    .pricingImgBG img {
+        width: 100%;
+        height: 30rem;
+    }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+    .main-navbar .navbar-brand .imageOverlaper {
+        height: 6rem;
+        width: 9rem;
+        transform: rotate(90deg);
+        left: 0.7rem;
+    }
+
+    .navbar-collapse {
+        padding: 0 0 2rem 1rem;
+    }
+
+    .sTitle {
+        font-size: 1.6rem;
+    }
+
+    .sSubTitle {
+        font-size: 2rem;
+    }
+
+    .sDescription {
+        font-size: 1rem;
+    }
+
+    .sFeatureSection .podcard-show-item {
+        width: auto;
+        height: 11rem;
+        padding: 1rem;
+    }
+
+    .sFeatureSection .icon {
+        width: 2rem;
+        height: 2rem;
+        margin-right: .5rem;
+    }
+
+    .sFeatureSection .icon i {
+        font-size: .9rem;
+    }
+
+    .sFeatureSection .title h5 {
+        font-size: 1.1rem;
+    }
+
+    .sFeatureSection .podcard-show-item p {
+        font-size: .9rem;
+    }
+
+    .sFeatureSection .podcard-show-item.last-card {
+        padding: 2.5rem;
+    }
+
+    .footer-section p {
+        font-size: 1.1rem;
+    }
+
+    .footer-section p a {
+        margin-left: 0.5rem;
+    }
+
+    .footer-section .column-one,
+    .footer-section .column-two {
+        margin-bottom: 2rem;
+    }
+
+    /* CSS PAGES */
+    .pricingImgBG img {
+        width: 100%;
+        height: 22rem;
+        object-fit: contain;
+    }
+}
+
+@media only screen and (min-width: 1200px) and (max-width: 1500px) {
+    .main-navbar .navbar-brand .imageOverlaper {
+        width: 64rem;
+
+    }
+    .sTitle {
+        font-size: 1.8rem;
+    }
+
+    .sSubTitle {
+        font-size: 2.2rem;
+    }
+
+    .sDescription {
+        font-size: 1.1rem;
+    }
+
+    .sFeatureSection .podcard-show-item {
+        width: auto;
+        height: 13rem;
+        padding: 1rem;
+    }
+
+    .sFeatureSection .icon {
+        width: 2.5rem;
+        height: 2.5rem;
+        margin-right: 1rem;
+    }
+
+    .sFeatureSection .icon i {
+        font-size: 1rem;
+    }
+
+    .sFeatureSection .title h5 {
+        font-size: 1.1rem;
+    }
+
+    .sFeatureSection .podcard-show-item p {
+        font-size: 1.1rem;
+    }
+
+    .sFeatureSection .podcard-show-item.last-card {
+        padding: 2.5rem;
+    }
+
+    .sFeatureSection .sDescription {
+        line-height: 1.7;
+    }
+
+    .sPlanSection .planCard .right .info-top .brace {
+        left: 23rem;
+    }
+
+    .footer-section .column-one {
+        padding: 0 2.5rem 0 0;
+    }
+
+    /* CSS PAGES */
+    .pricingImgBG img {
+        width: 100%;
+        height: 22rem;
+        object-fit: contain;
+    }
+}
+
+@media only screen and (min-width: 1600px){
+    .main-navbar .navbar-brand .imageOverlaper {
+        background: #66FCF1;
+        height: 23rem;
+        width: 71rem;
+        position: absolute;
+        top: 0;
+        left: -17rem;
+        transform: rotate(45deg);
+        z-index: 99;
+    }
+}
